@@ -17,15 +17,12 @@
 
 # Ниже приведен пример того, как можно делать такое на Python
 
-for i in 1
-do
-    SRC="solutions/solution-0$i.c"
-    OUT="solutions/solution-0$i"
-
-    if [ -f "$SRC" ]; then
-        echo "Compiling $SRC → $OUT"
-        gcc "$SRC" -O2 -std=c11 -o "$OUT"
-        chmod +x "$OUT"
+values="1 2 3 4 5"
+for i in $values; do
+    filename="solutions/solution-0$i.py"
+    if [ -f "$filename" ]; then
+        cp "$filename" "solutions/solution-0$i"
+        chmod +x "solutions/solution-0$i"
     fi
 done
 
