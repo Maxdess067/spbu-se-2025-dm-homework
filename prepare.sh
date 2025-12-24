@@ -17,7 +17,7 @@
 
 # Ниже приведен пример того, как можно делать такое на Python
 
-for i in 1
+for i in 1 2 
 do
     SRC="solutions/solution-0$i.c"
     OUT="solutions/solution-0$i"
